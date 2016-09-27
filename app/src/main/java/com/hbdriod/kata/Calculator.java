@@ -7,14 +7,10 @@ package com.hbdriod.kata;
 public class Calculator {
     public int Add(String numbers) {
         int sum = 0;
-        if (numbers.isEmpty() || numbers.equals(" ")) {
+        if (numbers.isEmpty()) {
             sum = 0;
-        }
-        if (!numbers.isEmpty() && numbers.length() == 1) {
-            sum = Character.getNumericValue(numbers.charAt(0));
-        }
-        if (!numbers.isEmpty() && numbers.length() == 3) {
-            sum = Character.getNumericValue(numbers.charAt(0))+Character.getNumericValue(numbers.charAt(2));
+        } else {
+            sum = ((!numbers.isEmpty()) && (!numbers.isEmpty() && numbers.length() == 3)) ? Character.getNumericValue(numbers.charAt(0))+Character.getNumericValue(numbers.charAt(2)): Character.getNumericValue(numbers.charAt(0));
         }
         return sum;
     }
