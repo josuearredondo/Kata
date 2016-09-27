@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">Kata</string>
-    <color name="blue">#6666ff</color>
-    <color name="bordercolor">#000000</color>
     <string name="enter_text">Saisir pour calculer</string>
     <string name="result_text">Result</string>
     <string name="send_text">Envoyer</string>
