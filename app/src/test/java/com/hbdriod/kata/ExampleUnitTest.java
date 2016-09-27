@@ -9,7 +9,18 @@ import static org.junit.Assert.*;
  */
 public class ExampleUnitTest {
     @Test
-    public void addition_isCorrect() throws Exception {
-        assertEquals(4, 2 + 2);
+    public void souldReturnZeroIfChampIsEmpty() throws Exception {
+        Calculator calculator = new Calculator();
+        assertEquals(0,calculator.Add(""));
+    }
+    @Test
+    public void souldReturnNumberIfRecoveryOneDigit() throws Exception {
+        Calculator calculator = new Calculator();
+        assertEquals(1,calculator.Add("1"));
+    }
+    @Test
+    public void souldReturnNumbersSumIfRecoveryTwoNumbers() throws Exception {
+        Calculator calculator = new Calculator();
+        assertEquals(3,calculator.Add("1,2"));
     }
 }
